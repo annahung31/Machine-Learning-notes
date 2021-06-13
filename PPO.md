@@ -31,3 +31,5 @@
 
 ## Reference
 * [DRL lecture 1](https://www.youtube.com/watch?v=z95ZYgPgXOY)
+
+* [Implement](https://github.com/ChengTsang/PPO-clip-and-PPO-penalty-on-Atari-Domain)
