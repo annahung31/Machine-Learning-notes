@@ -49,7 +49,21 @@ phi 本身可能表現不怎麼好，但他可以是一個好的初始化參數�
 2. 實際上在 testing 時可以 update 多次，得到較好的結果。
 
 
+# ANIL [3]
+ANIL 是 MAML 的 following work.
+1. 在 inner loop 只留下 task-specific head.
+2. 可以更有效率的做 training, 並且和 MAML 一樣好。
+
+假如我們將一個 prediction model 拆成兩部分： feature extractor 和 predictor， predictor 就是最後一層的 head。
+在原本的 MAML， inner loop 中， feature extractor 跟 head 都會一起更新，而在 ANIL 則是只會更新 head, 而把 feature extractor 固定住。
+
+可想而知，ANIL 一定會比較有效率，因為需要更新的參數少很多。令人驚訝的是，這樣做可以跟原本的 MAML 一樣好。
+
+
+
 ## Reference
 [1] [Hung-yi Lee 2019 Meta learning - MAML (1/9 - 9/9)](https://youtu.be/EkAqYbpCYAc)
 
 [2] [Paper repro: Deep Metalearning using “MAML” and “Reptile”](https://towardsdatascience.com/paper-repro-deep-metalearning-using-maml-and-reptile-fd1df1cc81b0)
+
+[3] [learn2learn Feature Reuse with ANIL](http://learn2learn.net/tutorials/anil_tutorial/ANIL_tutorial/)
