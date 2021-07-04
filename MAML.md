@@ -17,9 +17,10 @@
 
 他和 MAML 的最大差異在於拿來算 loss 的參數不一樣：
 
-![MAML](img/MAML_1.png)
-pre-training: 拿當下的模型參數對 pre-training 的test data 算 loss。
-MAML: 拿經過訓練後的模型參數對 test data 算 loss。
+![MAML](img/MAML_1.png)  
+
+* pre-training: 拿當下的模型參數對 pre-training 的test data 算 loss。
+* MAML: 拿經過訓練後的模型參數對 test data 算 loss。
 
 
 ### MAML: 找一個好的初始參數
@@ -36,16 +37,17 @@ phi 本身可能表現不怎麼好，但他可以是一個好的初始化參數�
 ![MAML](img/MAML_3.png)
 
 
-用畢業要做什麼為例子，現在去工作 -> 立刻得到很多錢 -> model pre-training
-簽博 -> 有潛力，念完博班之後人生道路更寬廣 -> MAML
+用畢業要做什麼為例子:
+* 現在去工作 -> 立刻得到很多錢 -> model pre-training
+* 簽博 -> 有潛力，念完博班之後人生道路更寬廣 -> MAML
  
 ![MAML](img/MAML_4.png)
 
 
 ## MAML 實作
 1. training 時參數只會被 update 1 次，就當作最終訓練結果(theta)。因為：
-    a. 只是要看潛力而已
-    b. few-shot learning 的 data 量很少, 所以update 太多次會 overfitting。
+    * 只是要看潛力而已
+    * few-shot learning 的 data 量很少, 所以update 太多次會 overfitting。
 2. 實際上在 testing 時可以 update 多次，得到較好的結果。
 
 
@@ -69,9 +71,8 @@ ANIL 是 MAML 的 following work.
 
 [3] [learn2learn Feature Reuse with ANIL](http://learn2learn.net/tutorials/anil_tutorial/ANIL_tutorial/)
 
-[4]FOMAML Hung-yi Lee 2019: 
-    - [Slides](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2019/Lecture/Meta1%20(v6).pdf#page=24)
-    - [Video](https://www.youtube.com/watch?v=mxqzGwP_Qys&list=PLJV_el3uVTsOK_ZK5L0Iv_EQoL1JefRL4&index=39)
+[4]FOMAML Hung-yi Lee 2019:   
+    * [Slides](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2019/Lecture/Meta1%20(v6).pdf#page=24)  
+    * [Video](https://www.youtube.com/watch?v=mxqzGwP_Qys&list=PLJV_el3uVTsOK_ZK5L0Iv_EQoL1JefRL4&index=39)
 ### 作業 resource
 * 作業 slides: https://speech.ee.ntu.edu.tw/~hylee/ml/ml2021-course-data/hw/HW15/HW15.pdf 
-* 
