@@ -60,6 +60,7 @@ ANIL 是 MAML 的 following work.
 可想而知，ANIL 一定會比較有效率，因為需要更新的參數少很多。令人驚訝的是，這樣做可以跟原本的 MAML 一樣好。
 
 
+# FOMAML [4]
 
 ## Reference
 [1] [Hung-yi Lee 2019 Meta learning - MAML (1/9 - 9/9)](https://youtu.be/EkAqYbpCYAc)
@@ -67,3 +68,10 @@ ANIL 是 MAML 的 following work.
 [2] [Paper repro: Deep Metalearning using “MAML” and “Reptile”](https://towardsdatascience.com/paper-repro-deep-metalearning-using-maml-and-reptile-fd1df1cc81b0)
 
 [3] [learn2learn Feature Reuse with ANIL](http://learn2learn.net/tutorials/anil_tutorial/ANIL_tutorial/)
+
+[4]FOMAML Hung-yi Lee 2019: 
+    - [Slides](http://speech.ee.ntu.edu.tw/~tlkagk/courses/ML_2019/Lecture/Meta1%20(v6).pdf#page=24)
+    - [Video](https://www.youtube.com/watch?v=mxqzGwP_Qys&list=PLJV_el3uVTsOK_ZK5L0Iv_EQoL1JefRL4&index=39)
+### 作業 resource
+* 作業 slides: https://speech.ee.ntu.edu.tw/~hylee/ml/ml2021-course-data/hw/HW15/HW15.pdf 
+* 
